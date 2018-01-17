@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.contentWrapper {
+    width: 90%;
+    margin: 0 auto 40px;
+    max-width: 980px;
+    min-height: calc(100vh - 100px);
+    transform: translateY(100px);
+    background: $white;
+    border-radius: 10px;
+}
