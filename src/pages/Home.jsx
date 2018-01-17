@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './home.scss';
-import Button from '../components/Button/Button';
+import Nav from '../components/Nav/Nav';
 
 
 const Home = () => (
     <section>
-        <Button>yay</Button>
+        <Nav></Nav>
     </section>
 )
 
