@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './home.scss';
-
+import Logo from '../components/Logo/Logo';
 
 const Home = () => (
     <section>
-        <h1>yay!</h1>
+        <Logo></Logo>
     </section>
 )
 
