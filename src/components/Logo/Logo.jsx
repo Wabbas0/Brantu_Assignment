@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import styles from './logo.scss';
 
 const Logo = () => (
-  <Link to="/" className={'test'}>
-    <h1>
-      Elprices<span>.com</span>
+  <Link to="/" className={styles.logo}>
+    <h1 className={styles.logoText}>
+      Elprices<span className={styles.tld}>.com</span>
     </h1>
   </Link>
 );

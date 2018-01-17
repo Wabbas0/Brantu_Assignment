@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+@import '../../styles/typo.scss';
+
+.logo {
+  @include Roboto-black;
+  display: inline-block;
+  margin-top: 25px; //temp
+  margin-left: 10px;  
+  @media screen and (min-width: $breakpoint-sm) {
+  margin-left: 25px;
+}
+
+}
+
+.logoText {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 28px;
+  }
+}
+
+.tld {
+  color: $goldenrod;
+  font-size: 16px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 18px;
+  }
+
+}
