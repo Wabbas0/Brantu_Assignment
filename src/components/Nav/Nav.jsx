@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 import Icon from '../Icon/Icon';
 
 const Nav = () => (
-  <nav>
+  <nav className={styles.nav}>
     <Logo className={styles.navLogo} />
 
     <ul className={styles.navLinks}>
@@ -17,12 +17,12 @@ const Nav = () => (
       </li>
       <li className={styles.navItem}>
         <Link to="/loyalty" className={styles.navLink}>
-          sign in
+          sign up
         </Link>
       </li>
       <li className={styles.navItem}>
-        <Link to="/loyalty" className={`${styles.button} ${styles.navLink}`}>
-          products
+        <Link to="/loyalty" className={`${styles.button}`}>
+          login
         </Link>
       </li>
     </ul>

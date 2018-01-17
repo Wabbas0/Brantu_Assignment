@@ -4,12 +4,6 @@
 .logo {
   @include Roboto-black;
   display: inline-block;
-  margin-top: 25px; //temp
-  margin-left: 10px;  
-  @media screen and (min-width: $breakpoint-sm) {
-  margin-left: 25px;
-}
-
 }
 
 .logoText {

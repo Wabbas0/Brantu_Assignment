@@ -5,7 +5,7 @@ import Nav from '../components/Nav/Nav';
 
 const Home = () => (
     <section>
-        <Nav></Nav>
+        <Nav />
     </section>
 )
 
