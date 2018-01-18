@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+@import '../../styles/typo.scss';
+
+.searchBar {
+  width: 100%;
+  height: 45px;
+  display: inline-block;
+}
+
+.input {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 45px);
+  padding-left: 7px;
+  @include Roboto-bold;
+  font-size: 16px;
+  color: $tertiary;
+  border: 2px solid $nandor;
+  transition: all 0.3s;
+
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  &:focus {
+    border-color: $salmon;
+
+    + .button {
+      background: $salmon;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  width: 45px;
+  text-align: center;
+  padding: 7px 0;
+  background: $nandor;
+  color: $white;
+}
+
+.input,
+.button {
+  height: 100%;
+}

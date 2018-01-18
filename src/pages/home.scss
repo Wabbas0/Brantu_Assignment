@@ -1,0 +1,20 @@
+@import '../styles/variables.scss';
+@import '../styles/typo.scss';
+
+.wrapper {
+    margin-top: 45px;
+    padding: 7px;
+}
+
+.heading {
+    @include Roboto-black;
+    text-align: center;
+    color: $keppel;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: capitalize;
+
+    @media screen and (min-width: $breakpoint-md) {
+        font-size: 20px;
+    }
+}
