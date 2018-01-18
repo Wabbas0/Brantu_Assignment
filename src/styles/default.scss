@@ -7,20 +7,15 @@ body {
   line-height: 1em;
   background-image: linear-gradient(45deg, $tangerine, $salmon);
   color: $white;
-  min-height: 100vh;
 }
 
-
+h2,
 h1 {
   @include Roboto-black;
 }
 
-h2 {
-  @include Roboto-black;
-}
-
 h3 {
-  @include Roboto-black;
+  @include Roboto-bold;
 }
 
 a,
@@ -44,4 +39,3 @@ input {
   border: none;
   outline: none;
 }
-

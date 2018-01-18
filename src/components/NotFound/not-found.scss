@@ -1,19 +1,20 @@
-@import "../../styles/variables.scss";
-@import "../../styles/typo.scss";
+@import '../../styles/variables.scss';
+@import '../../styles/typo.scss';
 
 .wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 .heading {
-    color: $tertiary-dark;
-    text-transform: capitalize;
+  color: $secondary-dark;
+  text-transform: capitalize;
+  margin-top: 7px;
 }
 
 .image {
-    width: 200px;
+  width: 200px;
 }
 
 .feedback {
-    color: $secondary-dark;
+  color: $secondary-dark;
 }

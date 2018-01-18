@@ -29,16 +29,18 @@
   @include Roboto-bold;
   padding: 10px;
   text-transform: capitalize;
+  text-align: center;
   display: inline-block;
+  min-width: 85px;
 
   &::after {
     content: '';
     display: inline-block;
-    width: 100%;
+    width: 80%;
     height: 2px;
     background: $black;
     position: absolute;
-    left: 0;
+    left: calc(50% - 34px);
     bottom: -7px;
     transition: all 0.3s;
   }
@@ -54,7 +56,6 @@
   composes: button from '../Button/button.scss';
   padding: 7px;
   display: inline-block;
-  margin-left: 10px;
 }
 
 .menuIcon {

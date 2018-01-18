@@ -32,6 +32,7 @@
     height: 100px;
   }
 
+  //ghost element to help align image vertically
   &::before {
     content: '';
     display: inline-block;
@@ -57,7 +58,6 @@
 }
 
 .prodName {
-  @include Roboto-bold;
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;

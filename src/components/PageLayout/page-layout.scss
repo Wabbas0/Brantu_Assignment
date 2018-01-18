@@ -1,11 +1,14 @@
 @import '../../styles/variables';
 
 .contentWrapper {
+  min-height: 100vh;
+  max-width: 980px;
+  background: $white;
+
+  @media screen and (min-width: $breakpoint-md) {
     width: 90%;
-    margin: 0 auto 40px;
-    max-width: 980px;
-    min-height: calc(100vh - 100px);
-    transform: translateY(100px);
-    background: $white;
+    margin: 40px auto;
     border-radius: 10px;
+    min-height: calc(100vh - 80px);
+  }
 }

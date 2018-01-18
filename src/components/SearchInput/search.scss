@@ -7,6 +7,30 @@
   display: inline-block;
 }
 
+.button {
+  display: inline-block;
+  width: 45px;
+  text-align: center;
+  padding: 7px 0;
+  background: $nandor;
+  color: $white;
+}
+
+::-webkit-search-cancel-button {
+  display: none;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  @include Roboto;
+}
+
+.input,
+.button {
+  height: 100%;
+}
+
 .input {
   display: inline-block;
   vertical-align: top;
@@ -18,14 +42,6 @@
   border: 2px solid $nandor;
   transition: all 0.3s;
 
-  &::-webkit-search-cancel-button {
-    display: none;
-  }
-
-  &::-webkit-input-placeholder {
-    @include Roboto;
-  }
-
   &:focus {
     border-color: $salmon;
 
@@ -33,18 +49,4 @@
       background: $salmon;
     }
   }
-}
-
-.button {
-  display: inline-block;
-  width: 45px;
-  text-align: center;
-  padding: 7px 0;
-  background: $nandor;
-  color: $white;
-}
-
-.input,
-.button {
-  height: 100%;
 }
