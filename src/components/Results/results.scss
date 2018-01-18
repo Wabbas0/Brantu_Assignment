@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+@import "../../styles/typo.scss";
+
+.button {
+    border: none;
+    display: block;
+    margin: 10px auto;
+    &:hover {
+        text-decoration: underline;
+        background: none;
+        color: $black;
+    }
+}

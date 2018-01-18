@@ -1,7 +1,6 @@
 import React from 'react';
-// import ProductsList from '../components/ProductsList/ProductsList';
-// import productsData from '../data/Products.json';
-import NotFound from '../components/NotFound/NotFound';
+import Results from '../components/Results/Results';
+import productsData from '../data/Products.json';
 import styles from './home.scss';
 
 const Home = () => (
@@ -9,7 +8,7 @@ const Home = () => (
     {/* <h1 className={styles.heading}>
       We help you to shop the right product at the right price!
     </h1> */}
-    <NotFound />
+    <Results results={productsData} />
   </section>
 );
 
