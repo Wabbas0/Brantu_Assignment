@@ -1,13 +1,17 @@
-@import "../../styles/variables.scss";
-@import "../../styles/typo.scss";
+@import '../../styles/variables.scss';
+@import '../../styles/typo.scss';
+
+.wrapper {
+  padding-top: 10px;
+}
 
 .button {
-    border: none;
-    display: block;
-    margin: 10px auto;
-    &:hover {
-        text-decoration: underline;
-        background: none;
-        color: $black;
-    }
+  border: none;
+  display: block;
+  margin: 15px auto 10px;
+  &:hover {
+    text-decoration: underline;
+    background: none;
+    color: $black;
+  }
 }

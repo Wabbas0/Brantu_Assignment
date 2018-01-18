@@ -4,9 +4,10 @@ import styles from './home.scss';
 
 const Home = () => (
   <section className={styles.wrapper}>
-    {/* <h1 className={styles.heading}>
+    <h1 className={styles.heading}>
       We help you to shop the right product at the right price!
-    </h1> */}
+    </h1>
+
     <SearchBar />
   </section>
 );

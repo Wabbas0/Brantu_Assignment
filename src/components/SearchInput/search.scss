@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/typo.scss';
 
-.wrapper {
+.wrapperwrapper {
   width: 100%;
   height: 45px;
   display: inline-block;
@@ -20,6 +20,10 @@
 
   &::-webkit-search-cancel-button {
     display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    @include Roboto;
   }
 
   &:focus {

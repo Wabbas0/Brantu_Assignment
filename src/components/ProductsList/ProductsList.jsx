@@ -21,7 +21,7 @@ ProductsList.propTypes = {
     PropTypes.shape({
       name: PropTypes.string,
       price: PropTypes.string,
-      image: PropTypes.string,
+      image: PropTypes.string
     })
   ).isRequired
 };

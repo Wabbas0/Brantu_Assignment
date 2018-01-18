@@ -2,19 +2,23 @@
 @import '../styles/typo.scss';
 
 .wrapper {
-    margin-top: 45px;
-    padding: 7px;
+  margin-top: 45px;
+  padding: 10px;
+  @media screen and (min-width: $breakpoint-md) {
+    width: 80%;
+    margin: 45px auto 0;
+  }
 }
 
 .heading {
-    @include Roboto-black;
-    text-align: center;
-    color: $keppel;
-    font-size: 16px;
-    line-height: 1.2;
-    text-transform: capitalize;
-
-    @media screen and (min-width: $breakpoint-md) {
-        font-size: 20px;
-    }
+  @include Roboto-black;
+  text-align: center;
+  color: $keppel;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 20px;
+  }
 }
