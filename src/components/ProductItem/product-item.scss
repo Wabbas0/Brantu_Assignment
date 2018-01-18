@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+@import "../../styles/typo.scss";
+
+.prodLink {
+    display: block;
+}
+
+.prodInfo,
+.prodImage {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.prodImage {
+    width: 100px;
+}
+
+.prodInfo {
+    width: calc(100% - 100px);
+}
