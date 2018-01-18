@@ -1,6 +1,5 @@
 import React from 'react';
-import Results from '../components/Results/Results';
-import productsData from '../data/Products.json';
+import SearchBar from '../components/SearchBar/SearchBar';
 import styles from './home.scss';
 
 const Home = () => (
@@ -8,7 +7,7 @@ const Home = () => (
     {/* <h1 className={styles.heading}>
       We help you to shop the right product at the right price!
     </h1> */}
-    <Results results={productsData} />
+    <SearchBar />
   </section>
 );
 

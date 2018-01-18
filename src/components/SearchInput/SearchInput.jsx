@@ -5,13 +5,13 @@ import Icon from '../Icon/Icon';
 import styles from './search.scss';
 
 const SearchBar = ({ className, value, placeholder, onChange }) => (
-  <label htmlFor="query" className={`${styles.searchBar} ${className}`}>
+  <label htmlFor="query" className={`${styles.wrapper} ${className}`}>
     <input
       className={styles.input}
       type="search"
       placeholder={placeholder}
       name="query"
-      // value={value}
+      value={value}
       onChange={onChange}
       id="query"
     />
