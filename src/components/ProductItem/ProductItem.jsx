@@ -21,7 +21,7 @@ const ProductItem = ({ name, price, image }) => (
 
 ProductItem.propTypes = {
   name: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.number,
   image: PropTypes.string.isRequired
 };
 

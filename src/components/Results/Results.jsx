@@ -17,14 +17,11 @@ const Results = ({ results, onClear }) => (
 
 Results.propTypes = {
   results: PropTypes.arrayOf(
-    PropTypes.oneOf([
-      PropTypes.shape({
-        name: PropTypes.string,
-        price: PropTypes.string,
-        image: PropTypes.string
-      }),
-      []
-    ])
+    PropTypes.shape({
+      name: PropTypes.string,
+      price: PropTypes.number,
+      image: PropTypes.string
+    })
   ).isRequired,
 
   onClear: PropTypes.func.isRequired

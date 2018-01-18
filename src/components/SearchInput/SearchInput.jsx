@@ -25,7 +25,7 @@ const SearchBar = ({ className, value, placeholder, onChange }) => (
 SearchBar.propTypes = {
   className: PropTypes.string,
   value: PropTypes.string.isRequired,
-  onChange: PropTypes.string.func,
+  onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string
 };
 
