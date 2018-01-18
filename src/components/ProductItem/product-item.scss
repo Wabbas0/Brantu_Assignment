@@ -1,20 +1,65 @@
-@import "../../styles/variables.scss";
-@import "../../styles/typo.scss";
+@import '../../styles/variables.scss';
+@import '../../styles/typo.scss';
+
+.productItem {
+  margin: 5px 0;
+  border-left: 2px solid $white;
+  transition: 0.3s;
+  &:hover {
+    border-color: $tertiary-dark;
+  }
+}
 
 .prodLink {
-    display: block;
+  display: block;
+  padding-left: 7px;
 }
 
 .prodInfo,
 .prodImage {
-    display: inline-block;
-    vertical-align: middle; 
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .prodImage {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  position: relative;
+
+  @media screen and (min-width: $breakpoint-md) {
     width: 100px;
+    height: 100px;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 100%;
+  }
+}
+
+.image {
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: calc(100% - 1px);
 }
 
 .prodInfo {
+  width: calc(100% - 70px);
+  padding-right: 10px;
+
+  @media screen and (min-width: $breakpoint-md) {
     width: calc(100% - 100px);
+  }
+}
+
+.prodName {
+  @include Roboto-bold;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 18px;
 }
