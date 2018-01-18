@@ -16,15 +16,13 @@ const Results = ({ results, onClear }) => (
 );
 
 Results.propTypes = {
-  results: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      price: PropTypes.number,
-      image: PropTypes.string
-    })
-  ).isRequired,
+  results: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    price: PropTypes.number,
+    image: PropTypes.string,
+  })).isRequired,
 
-  onClear: PropTypes.func.isRequired
+  onClear: PropTypes.func.isRequired,
 };
 
 export default Results;

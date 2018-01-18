@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import productsData from '../../data/Products.json';
 import SearchInput from '../SearchInput/SearchInput';
 import Results from '../Results/Results';
@@ -7,10 +6,13 @@ import Results from '../Results/Results';
 import styles from './search-bar.scss';
 
 class SearchBar extends React.Component {
-  state = {
-    value: '',
-    results: []
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: '',
+      results: []
+    };
+  }
 
   clear() {
     this.setState({
@@ -27,7 +29,7 @@ class SearchBar extends React.Component {
       );
 
       this.setState({
-        results: results
+        results
       });
     }
   }
@@ -36,7 +38,7 @@ class SearchBar extends React.Component {
     const { value } = e.target;
 
     this.setState({
-      value: value
+      value
     });
 
     this.search(value);

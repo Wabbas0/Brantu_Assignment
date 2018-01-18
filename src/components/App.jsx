@@ -7,7 +7,7 @@ import Home from '../pages/Home';
 const App = () => (
   <BrowserRouter>
     <PageLayout>
-       <Nav />
+      <Nav />
 
       <Switch>
         <Route exact path="/">

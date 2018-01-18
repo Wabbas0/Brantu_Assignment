@@ -27,7 +27,7 @@ const Nav = () => (
       </li>
     </ul>
 
-    <Button className={styles.menuIcon} isIcon={true}>
+    <Button className={styles.menuIcon} isIcon>
       <Icon icon="bars" />
     </Button>
   </nav>

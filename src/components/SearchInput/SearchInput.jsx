@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import Icon from '../Icon/Icon';
 import styles from './search.scss';
 
-const SearchBar = ({ className, value, placeholder, onChange }) => (
+const SearchBar = ({
+  className, value, placeholder, onChange,
+}) => (
   <label htmlFor="query" className={`${styles.wrapper} ${className}`}>
     <input
       className={styles.input}
@@ -26,12 +28,12 @@ SearchBar.propTypes = {
   className: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
 };
 
 SearchBar.defaultProps = {
   className: '',
-  placeholder: ''
+  placeholder: '',
 };
 
 export default SearchBar;

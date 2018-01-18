@@ -17,13 +17,11 @@ const ProductsList = ({ items }) => (
 );
 
 ProductsList.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      price: PropTypes.number,
-      image: PropTypes.string
-    })
-  ).isRequired
+  items: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    price: PropTypes.number,
+    image: PropTypes.string,
+  })).isRequired,
 };
 
 export default ProductsList;
