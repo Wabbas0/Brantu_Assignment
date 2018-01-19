@@ -18,6 +18,11 @@ h3 {
   @include Roboto-bold;
 }
 
+a {
+  text-decoration: none;
+  color: $black;
+}
+
 a,
 a:link,
 a:hover,
@@ -28,11 +33,6 @@ button:focus {
   outline: 0;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
     border-color 0.3s ease-in-out;
-}
-
-a {
-  text-decoration: none;
-  color: $black;
 }
 
 input {

@@ -16,16 +16,6 @@
   color: $white;
 }
 
-::-webkit-search-cancel-button {
-  display: none;
-}
-
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder {
-  @include Roboto;
-}
-
 .input,
 .button {
   height: 100%;
@@ -41,6 +31,21 @@
   color: $tertiary;
   border: 2px solid $nandor;
   transition: all 0.3s;
+
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    @include Roboto;
+  }
+
+  &::-moz-placeholder {
+    @include Roboto;
+  }
+  &:-ms-input-placeholder {
+    @include Roboto;
+  }
 
   &:focus {
     border-color: $salmon;
