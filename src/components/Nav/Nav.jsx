@@ -11,17 +11,17 @@ const Nav = () => (
 
     <ul className={styles.navLinks}>
       <li className={styles.navItem}>
-        <Link to="/loyalty" className={styles.navLink}>
+        <Link to="/" className={styles.navLink}>
           products
         </Link>
       </li>
       <li className={styles.navItem}>
-        <Link to="/loyalty" className={styles.navLink}>
+        <Link to="/" className={styles.navLink}>
           sign up
         </Link>
       </li>
       <li className={styles.navItem}>
-        <Link to="/loyalty" className={`${styles.button}`}>
+        <Link to="/" className={`${styles.button}`}>
           login
         </Link>
       </li>
